@@ -12,7 +12,7 @@ namespace Cumulative1.Models
         private static string Password { get { return "root"; } }
         private static string Database { get { return "school"; } }
         private static string Server { get { return "localhost"; } }
-        private static string Port { get { return "3306"; } }
+        private static string Port { get { return "3306"; } } 
 
 
         protected static string ConnectionString

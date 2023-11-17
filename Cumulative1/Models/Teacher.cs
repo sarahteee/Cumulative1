@@ -25,6 +25,6 @@ namespace Cumulative1.Models
         public DateTime HireDate { get; set;}
 
         //teacher salary
-        public double Salary { get; set;}
+        public string Salary { get; set;}
     }
 }
