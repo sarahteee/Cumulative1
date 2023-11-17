@@ -42,7 +42,7 @@ namespace Cumulative1.Controllers
             MySqlCommand cmd = Conn.CreateCommand();
 
             //command text SQL query
-            cmd.CommandText = "select * from teachers where teacherfname like @key or teacherlname like @key or teacherid like @key" ;
+            cmd.CommandText = "select * from teachers where teacherfname like @key or teacherlname like @key";
 
             //sanitize the teacher search key input
             cmd.Parameters.AddWithValue("@key", "%" + TeacherSearchKey + "%");
