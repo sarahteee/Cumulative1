@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Cumulative1.Models.Class>
 
 @{
-    ViewBag.Title = "List";
+    ViewBag.Title = "Class List- Web Development";
 }
 
 <h2>List of Classes</h2>
@@ -16,6 +16,6 @@
 @{
     foreach (Cumulative1.Models.Class Class in Model)
     {
-        <div><a href="/Class/Show/@Class.ClassId">@Class.ClassCode @Class.ClassName</a></div>
+        <div><a href="/Class/Show/@Class.ClassId"> @Class.ClassName</a></div>
     }
 }

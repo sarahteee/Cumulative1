@@ -74,7 +74,7 @@ namespace Cumulative1.Controllers
                 ["employeenumber"].ToString();
 
                 //get teacher hire date
-                DateTime HireDate = (DateTime)ResultSet
+                DateTime HireDate = (DateTime) ResultSet
                 ["hiredate"];
                  
                 //get teacher salary
