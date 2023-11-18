@@ -21,7 +21,7 @@ namespace Cumulative1.Controllers
         /// <returns>
         /// List of student objects with student names containing the search key
         /// </returns>
-        /// <param name="StudentSearchKey">The teachers being searched</param>
+        /// <param name="StudentSearchKey">The student being searched</param>
         /// <example>
         /// GET api/StudentData/ListStudents -> [{"StudentId":"1", "StudentFName":"Sarah", "StudentLName":"Valdez", "StudentNumber":"N1678", "EnrolDate":"2018-06-18"
         /// GET api/StudentData/ListStudents -> [{"StudentId":"2", "StudentFName":"Jennifer", "StudentLName":"Faulkner", "StudentNumber":"N1679", "EnrolDate":"2018-08-02"
@@ -60,7 +60,7 @@ namespace Cumulative1.Controllers
                 //access column info
 
                 //get student id
-                int StudentId = (int)ResultSet["studentid"];
+                int StudentId = Convert.ToInt32(ResultSet["studentid"]);
 
                 //get student first name
                 string StudentFName = ResultSet
