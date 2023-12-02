@@ -12,7 +12,7 @@ namespace Cumulative1.Controllers
     {
         // GET: Student/List?StudentSearchKey={value}
         // Go to /Views/Student/List.cshtml
-        // Browser opens a list student page
+        // Browser opens a list students page
         public ActionResult List(string StudentSearchKey)
         {
             //Check if the search key works
